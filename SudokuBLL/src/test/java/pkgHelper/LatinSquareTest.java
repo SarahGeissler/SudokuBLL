@@ -65,4 +65,33 @@ public class LatinSquareTest {
 		assertFalse(lq.doesElementExist(arr, iValue));
 	}
 	
+	@Test
+	public void getColumn_Test() {
+	
+	int[][] mySquare = {{2,6,4},{3,2,1},{9,3,7}};
+	LatinSquare ls = new LatinSquare(mySquare);
+	
+	System.out.println(Arrays.toString(ls.getColumn(2)));
+	}
+	
+	@Test
+	public void getColumn_Test2() {
+
+	int[][] mySquare = {{2,6,4},{3,2,1},{9,3,7},{7,8,9}};
+	LatinSquare ls = new LatinSquare(mySquare);
+
+	System.out.println(Arrays.toString(ls.getColumn(0)));
+	}
+	
+	@Test
+	public void getColumn_Test3() {
+	
+	int[][] mySquare = {{1,2,3,4},{4,3,2,1},{2,3,4,1},{3,4,1,2}};
+	LatinSquare ls = new LatinSquare(mySquare);
+	
+	System.out.println(Arrays.toString(ls.getColumn(3)));
+	}
+	
+	
+	
 }

@@ -102,7 +102,7 @@ public class LatinSquareTest {
 	}
 	
 	@Test
-	public void ContainsZeroTest() {
+	public void ContainsZeroTest2() {
 		int[][] mySquare = {{1,2,3},{3,0,1},{2,3,1}};
 		
 		LatinSquare ls = new LatinSquare(mySquare);

@@ -68,7 +68,7 @@ public class LatinSquareTest {
 	@Test
 	public void getColumn_Test() {
 	
-	int[][] mySquare = {{2,6,4},{3,2,1},{9,3,7}};
+	int[][] mySquare = {{1,2,3,4},{4,3,2,1},{2,3,4,1},{3,4,1,2}};
 	LatinSquare ls = new LatinSquare(mySquare);
 	
 	System.out.println(Arrays.toString(ls.getColumn(2)));
@@ -92,6 +92,23 @@ public class LatinSquareTest {
 	System.out.println(Arrays.toString(ls.getColumn(3)));
 	}
 	
+	@Test
+	public void ContainsZeroTest() {
+		int[][] mySquare = {{1,2,3},{3,2,1},{2,3,1}};
+		
+		LatinSquare ls = new LatinSquare(mySquare);
+		
+		assertFalse(ls.ContainsZero());
+	}
+	
+	@Test
+	public void ContainsZeroTest() {
+		int[][] mySquare = {{1,2,3},{3,0,1},{2,3,1}};
+		
+		LatinSquare ls = new LatinSquare(mySquare);
+		
+		assertTrue(ls.ContainsZero());
+	}
 	
 	
 }
